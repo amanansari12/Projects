@@ -3,7 +3,7 @@ import time
 import webbrowser
 
 # API key for accessing NewsAPI
-api_key = 'ec4852f529284bd4b7d62fadd7426de1'
+api_key = '' # Get the API key from 'https://newsapi.org/'
 
 # Get user input for the type of news they are interested in
 query = input("Which Type of News are You Interested in? ")
