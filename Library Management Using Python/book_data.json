@@ -1,0 +1,31 @@
+{
+    "Books": [
+        {
+            "ID": "A002",
+            "Name": "Java",
+            "Author": "Henry"
+        },
+        {
+            "ID": "A003",
+            "Name": "Asp",
+            "Author": "happy"
+        },
+        {
+            "ID": "A004",
+            "Name": "Operation Research",
+            "Author": "NA"
+        },
+        {
+            "ID": "A001",
+            "Name": "C++",
+            "Author": "kevin"
+        }
+    ],
+    "Rental_book": [
+        {
+            "ID": "A001",
+            "Name": "C++",
+            "Author": "Kevin Figi"
+        }
+    ]
+}
