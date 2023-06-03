@@ -3,7 +3,7 @@ import time
 import webbrowser
 
 # API key for accessing NewsAPI
-api_key = 'ec4852f529284bd4b7d62fadd7426de1'
+api_key = '' # get You API key from 'https://newsapi.org/'
 
 # List of news categories and their corresponding API URLs
 news_types = [['Tesla', f'https://newsapi.org/v2/everything?q=tesla&from=2023-04-29&sortBy=publishedAt&apiKey={api_key}'],
