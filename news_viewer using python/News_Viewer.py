@@ -64,4 +64,4 @@ while article_num < len(news_article):
     else:
         # Open the selected news article in a web browser
         webbrowser.open(news_web_url[news_num-1])
-                exit()
+        exit()
