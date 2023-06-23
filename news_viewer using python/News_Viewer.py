@@ -1,6 +1,10 @@
 import requests as req
 import time
 import webbrowser
+from datetime import datetime, timedelta
+
+current_date =  datetime.now().date()
+new_date = current_date - timedelta(days=15)
 
 # API key for accessing NewsAPI
 api_key = '' # Get the API key from 'https://newsapi.org/'
@@ -9,10 +13,16 @@ api_key = '' # Get the API key from 'https://newsapi.org/'
 query = input("Which Type of News are You Interested in? ")
 
 # Construct the URL for fetching news articles based on the user's query
-news_url = f'https://newsapi.org/v2/everything?q={query}&from=2023-04-29&sortBy=publishedAt&apiKey={api_key}'
+news_url = f'https://newsapi.org/v2/everything?q={query}&from={new_date}&sortBy=publishedAt&apiKey={api_key}'
 
 # Fetch the news articles from the API and store them in the 'news_article' variable
 news_article = req.get(news_url).json()['articles']
+
+# Checking If Data present in news_article, If not exit the Program
+if not news_article:
+    print("Invalid Input ! Enter Correct Query.")
+    exit()
+
 
 # Display the header for the news category
 print(f"\nDisplaying the Top News of {query}:")
@@ -53,7 +63,5 @@ while article_num < len(news_article):
         continue
     else:
         # Open the selected news article in a web browser
-        for j in range(len(news_web_url)):
-            if news_num == j + 1:
-                webbrowser.open(news_web_url[j])
+        webbrowser.open(news_web_url[news_num-1])
                 exit()
