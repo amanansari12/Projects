@@ -1,0 +1,158 @@
+.c-item {
+    height: 100%;
+    width: 370px;
+}
+
+
+.c-img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+    filter: brightness(0.6);
+
+}
+
+#navslink {
+    margin-top: 10px;
+}
+
+#card_row{
+
+    margin-top: 80px; 
+    margin-left: 40px;
+
+
+
+}
+
+
+@media (max-width: 1194px) and (min-width: 1092px) {
+    #card_row {
+        margin-left: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 340px;
+    }
+    
+    
+    
+
+
+}
+
+
+@media (max-width: 1091px) and (min-width: 992px) {
+    #card_row {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 300px;
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 576px) {
+    #card_row {
+        margin-left: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 240px;
+    }
+
+}
+
+@media (max-width: 576px) and (min-width: 525px){
+    #card_row {
+        margin-left: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 250px;
+        margin-left: 40px;
+    }
+
+}
+
+@media (max-width: 576px) and (min-width: 414px){
+    #card_row {
+        margin-left: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 370px;
+        margin-left: 20px;
+    }
+
+}
+@media (max-width: 414px){
+    #card_row {
+        margin-left: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 280px;
+        margin-left: 30px;
+    }
+
+    .scroolPos{
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+
+}
+
+
+@media (max-width: 346px){
+    #card_row {
+        margin-left: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 240px;
+        margin-left: 0;
+    }
+
+}
+
+@media (min-width: 1400px){
+    #card_row {
+        margin-left: 0;
+    }
+
+    .c-item {
+        height: 100%;
+        width: 330px;
+        margin-left: 0;
+    }
+
+}
+
+/* Changing the Margin of Show details and Add to Fav Btn */
+
+@media (max-width: 991px){
+    
+    .scroolPos{
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+}
+
+
+@media (max-width: 1091px){
+    
+    .scroolPos{
+        margin-top: 10px;
+        margin-left: 3px !important;
+    }
+}
